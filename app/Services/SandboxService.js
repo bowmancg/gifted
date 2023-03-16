@@ -39,7 +39,7 @@ class SandboxService {
       const res = await sandboxApi.post('gifts', formData)
       console.log('[Posting Giph]', res.data)
       const newGiph = new SandboxGiph(res.data)
-      appState.giphs.push(newGiph)
+      appState.giphs.unshift(newGiph)
       appState.emit('giphs')
     }
 
