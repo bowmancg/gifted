@@ -16,7 +16,7 @@
 </head>
 
 <body>
-  <header>
+  <!-- <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
         <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
@@ -24,22 +24,57 @@
         <span class="ms-2">gifted</span>
       </a>
     </nav>
-  </header>
+  </header> -->
+
+
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+
+        <div class="col-4 bg-success">
+          <div class="mb-5">
+            <h1>Gifted</h1>
+          </div>
+          <div>
+      
+            <form action="" onsubmit="app.sandboxController.postGiph()">
+              <label for="tag">tag</label>
+              <input type="text" id="tag" name="tag" placeholder="" class="form-control">
+              <label for="url">url</label>
+              <input type="url" id="url" name="url" placeholder="" class="form-control">
+              <div class="justify-content-end my-2">
+                <button class="btn btn-danger" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+
         </div>
+
+        <div class="col-8">
+          <div class="m-5">
+            <div class="row" id="giftCard">
+              <!-- <img src="http://clipart-library.com/images/pi7KzML4T.jpg" alt=""> -->
+              <!-- <div class="col-4">
+                <div class="card">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1661956271855-a4f0f8fe070e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGlnZXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+                    alt="" height="350">
+                  <div class="p-2 text-center">
+                    <h5>Gift text</h5>
+                  </div>
+                </div>
+              </div> -->
+
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </main>
-  <footer class="bg-dark text-light">
-    <div class="text-center no-select">
-      <p><small>Made with 💖 by CodeWorks</small></p>
-    </div>
-  </footer>
 
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
